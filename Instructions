@@ -1,12 +1,14 @@
-# COG&Pfam-join
+## COG&Pfam-join
+
 Note: to use these joining scripts, you need to have installed in your computer the RStudio or something similar to deal with R.
-Get amino-acid FASTA
+
+# Get amino-acid FASTA genome file to upload on WebMGA
 1) Upload genome on RAST.
 2) In RAST, for each genome, go to Job Details and download the annotated amino-acid FASTA file.
-WebMGA
+# WebMGA
 3) Upload the amino-acid FASTA file in WebMGA, and run it for:
 	COG: http://weizhong-lab.ucsd.edu/webMGA/server/cog/
-Pfam: http://weizhong-lab.ucsd.edu/webMGA/server/pfam/
+	Pfam: http://weizhong-lab.ucsd.edu/webMGA/server/pfam/
 The job processing can take a while. So, I advise you to copy  the JobID to a document to be able to retrieve the results latter, in case you accidentally close the browser.
 4) When it’s finished, download the results. These will consist in several different files (normally 3). For each genome you’ll only need the .txt file with a simple name. The other 2 will say “cog-class” or “cog-raw”- these you can discard. 
 Note: it is really important that your .txt file has a simple name like: aquimarina.txt (any different characters won’t work on these script)s.
